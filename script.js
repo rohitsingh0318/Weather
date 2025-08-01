@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const locationInput = document.getElementById('locationInput');
     const getWeatherBtn = document.getElementById('getWeatherBtn');
-    const weatherDisplay = document.getElementById('weatherDisplay');
+    const  WeatherDisplay = document.getElementById('weatherDisplay');
     const cityNameElement = document.getElementById('cityName');
     const temperatureElement = document.getElementById('temperature');
     const conditionElement = document.getElementById('condition');
