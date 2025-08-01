@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.weather-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+#locationInput {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+#getWeatherBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#getWeatherBtn:hover {
+    background-color: #218838;
+}
+
+.weather-display {
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    min-height: 180px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-display p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+#cityName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#temperature {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#condition {
+    font-style: italic;
+    color: #555;
+}
+
+#conditionIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* add media query  */
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 20px; 
+    }
+
+    .input-section {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    #locationInput,
+    #getWeatherBtn {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    #getWeatherBtn {
+        padding: 15px; 
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    #temperature {
+        font-size: 1.8rem;
+    }
+
+    #cityName {
+        font-size: 1.3rem; 
+    }
+}
