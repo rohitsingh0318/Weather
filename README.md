@@ -3,3 +3,6 @@
 </h1>
 Weather App: Your Instant Local Forecast
 Weather App is a lightweight and intuitive web application designed to provide you with immediate weather insights for any location. Say goodbye to complex interfaces and hello to quick, accurate temperature readings!
+
+Right now it is not working properly, some error is coming due to which data is not getting fetched. 
+I'm working on fixing it, I'll fix it very soon.
